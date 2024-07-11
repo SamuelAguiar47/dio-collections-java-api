@@ -22,6 +22,6 @@ public class Convidado {
     //Metodos
     @Override
     public String toString() {
-        return "Convidado [nome=" + nome + ", codigoConvite=" + codigoConvite + "]";
+        return "Convidado [nome=" + nome + ", codigoConvite=" + codigoConvite + "]\n";
     }
 }

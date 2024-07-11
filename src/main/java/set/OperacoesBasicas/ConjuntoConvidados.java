@@ -33,5 +33,21 @@ public class ConjuntoConvidados {
         return this.conjuntoConvidados;
     }
 
-    
+    public static void main(String[] args) {
+        ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
+        System.out.println(conjuntoConvidados.exibirConvidados());
+        conjuntoConvidados.adicionarConvidado("João", 1);
+        conjuntoConvidados.adicionarConvidado("Lucas", 2);
+        conjuntoConvidados.adicionarConvidado("Beatriz", 3);
+        conjuntoConvidados.adicionarConvidado("Talia", 4);
+        conjuntoConvidados.adicionarConvidado("Izabel", 5);
+        conjuntoConvidados.adicionarConvidado("Sofia", 6);
+        System.out.println(conjuntoConvidados.exibirConvidados());
+        System.out.println(conjuntoConvidados.contarConvidados());
+        conjuntoConvidados.removerConvidadoPorCodigoDeConvite(3);
+        conjuntoConvidados.removerConvidadoPorCodigoDeConvite(5);
+        conjuntoConvidados.removerConvidadoPorCodigoDeConvite(1);
+        System.out.println(conjuntoConvidados.exibirConvidados());
+
+    }
 }
