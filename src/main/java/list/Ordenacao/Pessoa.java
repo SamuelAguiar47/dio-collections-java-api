@@ -39,6 +39,13 @@ public class Pessoa implements Comparable<Pessoa>{
     public int compareTo(Pessoa p) {
         return Integer.compare(this.idade, p.getIdade());
     }
+
+    @Override
+    public String toString() {
+        return nome + " - " + idade + " - " + altura + "\n";
+    }
+
+    
 }
 
 class ComparatorPorAltura implements Comparator<Pessoa> {
